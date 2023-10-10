@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+</body>
+<script>
+
+    let result = 9;
+
+    switch (result) {
+        case 90:
+            result = "90% Gared:-A+ Congratulations! You got an A!";
+            break;
+        case 80:
+            result = "80% Gared:B+ Good job! You got a B+!";
+            break;
+        case 70:
+            result = "70% Gared:-B You could do better next time.";
+            break;
+        case 50:
+            result = "50% Gared:-C You need to study harder next time.";
+            break;
+        case 33:
+            result = "33% Gared:-F You failed the class.";
+            break;
+
+        default:
+            result = "Invalid school result.";
+            break;
+    }
+    document.getElementById("demo").innerHTML = "Result is:- " + result;   
+</script>
+</html>
